@@ -14,14 +14,14 @@
 		"php": ">=5.4.7"
 	},
 	"extra": {
-		"display-name": "phpBB Studio - GitHub OAuth2 light",
+		"display-name": "phpBB Studio - OAuth2",
 		"soft-require": {
 			"phpbb/phpbb": ">=3.2.7,<4.0.0@dev"
 		}
 	},
 	"autoload": {
 		"psr-0": {
-			"oauth2": "src/OAuth/OAuth2/Service/"
+			"oauth2": "OAuth/OAuth2/Service/"
 		}
 	}
 }
