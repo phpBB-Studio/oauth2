@@ -21,7 +21,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"oauth2": "src/"
+			"oauth2": "src/OAuth/OAuth2/Service/"
 		}
 	}
 }
