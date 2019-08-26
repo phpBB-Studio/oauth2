@@ -1,0 +1,27 @@
+{
+	"name": "phpbb-studio/oauth2",
+	"description": "Rewamp and create new classes for phpBB's Oauth2",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "phpBB-Studio",
+			"email": "info@phpbbstudio.com"
+		}
+	],
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=5.4.7"
+	},
+	"extra": {
+		"display-name": "phpBB Studio - GitHub OAuth2 light",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.2.7,<4.0.0@dev"
+		}
+	},
+	"autoload": {
+		"psr-0": {
+			"oauth2": "src/"
+		}
+	}
+}
