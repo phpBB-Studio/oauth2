@@ -21,7 +21,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"oauth2": "OAuth/OAuth2/Service/"
+			"phpBB-Studio\\oauth2" : "src"
 		}
 	}
 }
