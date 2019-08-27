@@ -22,7 +22,7 @@ use OAuth\Common\Http\Uri\UriInterface;
 class discord extends AbstractService
 {
 	/**
-	 * Returns the user object of the requester's account.For OAuth2.
+	 * Returns the user object of the requester's account.
 	 * (For OAuth2, this requires the identify scope, which will return the object without an email)
 	 *
 	 * @see https://discordapp.com/developers/docs/resources/user#get-current-user
