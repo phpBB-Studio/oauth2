@@ -21,10 +21,8 @@
 	},
 	"autoload": {
 		"files": [
-			{
-				"src/Studio_github.php":
-				"src/discord.php"
-			}
+		"src/Studio_github.php",
+		"src/discord.php"
 		]
 	}
 }
