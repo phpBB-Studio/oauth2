@@ -1,7 +1,8 @@
 <?php
 /**
  *
- * DOL - Discord OAuth2 light. A classn for the phpBB Forum Software package.
+ * Discord OAuth2 light.
+ * A class for the phpBB Forum Software package.
  *
  * @copyright (c) 2019, phpBB Studio, https://www.phpbbstudio.com
  * @license GNU General Public License, version 2 (GPL-2.0)
