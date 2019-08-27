@@ -3,7 +3,7 @@
 	"description": "Rewamp and create new classes for phpBB's Oauth2",
 	"type": "library",
 	"license": "MIT",
-	"homepage": "https://github.com/phpBB-Studio/oauth2",
+	"homepage": "https://phpbbstudio.com",
 	"authors": [
 		{
 			"name": "phpBB-Studio",
