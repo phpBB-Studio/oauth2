@@ -30,7 +30,7 @@ class phpbbstudio_autoloader
 	 */
 	public function autoload($class)
 	{
-		// Only load the class if it starts with "SimplePie"
+		// Only load the class if it starts with "Studio_github"
 		if (strpos($class, 'Studio_github') !== 0)
 		{
 			return;
