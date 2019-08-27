@@ -20,6 +20,6 @@
 		}
 	},
 	"autoload": {
-		"psr-0": { "": "src/" }
+		"files": ["src/Studio_github.php", "src/discord.php"]
 	}
 }
