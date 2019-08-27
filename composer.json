@@ -20,6 +20,11 @@
 		}
 	},
 	"autoload": {
-		"files": ["src/Studio_github.php", "src/discord.php"]
+		"files": [
+			{
+				"src/Studio_github.php":
+				"src/discord.php"
+			}
+		]
 	}
 }
