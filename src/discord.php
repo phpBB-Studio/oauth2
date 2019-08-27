@@ -22,6 +22,15 @@ use OAuth\Common\Http\Uri\UriInterface;
 class discord extends AbstractService
 {
 	/**
+	 * Returns the user object of the requester's account.For OAuth2.
+	 * (For OAuth2, this requires the identify scope, which will return the object without an email)
+	 *
+	 * @see https://discordapp.com/developers/docs/resources/user#get-current-user
+	 * @see https://discordapp.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes
+	 */
+	const SCOPE_IDENTIFY = 'identify';
+
+	/**
 	 * discord constructor.
 	 *
 	 * @param \OAuth\Common\Consumer\CredentialsInterface	$credentials
@@ -38,6 +47,15 @@ class discord extends AbstractService
 		UriInterface $baseApiUri = null
 	)
 	{
+		if (empty($scopes))
+		{
+			/**
+			 * You can specify multiple scopes by separating them with a space
+			 * (explode the array with a space separator)
+			 */
+			$scopes = [self::SCOPE_IDENTIFY];
+		}
+
 		parent::__construct($credentials, $httpClient, $storage, $scopes, $baseApiUri);
 
 		if (null === $baseApiUri)
@@ -89,7 +107,10 @@ class discord extends AbstractService
 		}
 		else if (isset($data['error']))
 		{
-			throw new TokenResponseException('Error in retrieving token: "' . $data['error'] . '"');
+			/* We are not sure if "$data['error']" might be an array */
+			$message = is_array($data['error']) ? implode('<br>', $data['error']) : $data['error'];
+
+			throw new TokenResponseException('Error in retrieving token: "' . $message . '"');
 		}
 
 		/**
@@ -135,7 +156,6 @@ class discord extends AbstractService
 				'grant_type'		=> 'authorization_code',
 				'response_type'		=> 'code',
 				'redirect_uri'		=> $this->credentials->getCallbackUrl(),
-				'scope'				=> 'identify',
 			]
 		);
 
