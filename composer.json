@@ -20,8 +20,6 @@
 		}
 	},
 	"autoload": {
-		"psr-0": {
-			"Studio_github": "src/"
-		}
+		"files": ["src/Studio_github.php"]
 	}
 }
