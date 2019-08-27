@@ -19,7 +19,7 @@ use OAuth\Common\Http\Client\ClientInterface;
 use OAuth\Common\Storage\TokenStorageInterface;
 use OAuth\Common\Http\Uri\UriInterface;
 
-class discord extends AbstractService
+class Studio_discord extends AbstractService
 {
 	/**
 	 * Returns the user object of the requester's account.
