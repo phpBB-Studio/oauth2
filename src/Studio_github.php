@@ -50,7 +50,7 @@ class Studio_github extends AbstractService
 		{
 			/**
 			 * You can specify multiple scopes by separating them with a space
-			 * (explode the array with a space separator)
+			 * (implode the array with a space separator). See below.
 			 */
 			$scopes = [self::SCOPE_READONLY];
 		}
@@ -166,6 +166,12 @@ class Studio_github extends AbstractService
 				'redirect_uri'		=> $this->credentials->getCallbackUrl(),
 			]
 		);
+
+		/**
+		 * Scope is a list of OAuth2 scopes separated by url encoded spaces.
+		 * Here the url will be encoded later by the logic, so use a normal space.
+		 */
+		$parameters['scope'] = implode(' ', $this->scopes);
 
 		/**
 		 * Prevent CSRF and Clickjacking.
