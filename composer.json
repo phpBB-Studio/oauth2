@@ -20,8 +20,8 @@
 		}
 	},
 	"autoload": {
-		"psr-0": {
-			"phpBB-Studio\\oauth2" : ""
+		"psr-4": {
+			"phpBB-Studio\\oauth2\\" : ""
 		}
 	}
 }
