@@ -1,0 +1,5 @@
+.github/ export-ignore
+.git/ export-ignore
+.gitattibute export-ignore
+.editorconfig export-ignore
+.gitignore export-ignore
