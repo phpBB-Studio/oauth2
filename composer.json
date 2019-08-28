@@ -23,12 +23,12 @@
 	"autoload": {
 		"files": [
 			"src/Studio_github.php",
-			"src/Studio_discord.php"
+			"src/Studio_discord.php",
 			"src/Battlenet/Studio_battlenet_base.php",
 			"src/Battlenet/Studio_battlenet_apac.php",
 			"src/Battlenet/Studio_battlenet_cn.php",
 			"src/Battlenet/Studio_battlenet_eu.php",
-			"src/Battlenet/Studio_battlenet_us.php",
+			"src/Battlenet/Studio_battlenet_us.php"
 		]
 	}
 }
