@@ -12,7 +12,9 @@
 	],
 	"minimum-stability": "stable",
 	"require": {
-		"php": ">=5.4.7"
+		"php": ">=5.4.7",
+		"composer/installers": "~1.0",
+		"phpbb-studio/oauth2": "dev-master"
 	},
 	"extra": {
 		"display-name": "phpBB Studio - OAuth2",
@@ -24,6 +26,11 @@
 		"files": [
 			"src/Studio_github.php",
 			"src/Studio_discord.php"
+			"src/Battlenet/Studio_battlenet_base.php",
+			"src/Battlenet/Studio_battlenet_apac.php",
+			"src/Battlenet/Studio_battlenet_cn.php",
+			"src/Battlenet/Studio_battlenet_eu.php",
+			"src/Battlenet/Studio_battlenet_us.php",
 		]
 	}
 }
