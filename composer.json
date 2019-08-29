@@ -17,7 +17,7 @@
 	"extra": {
 		"display-name": "phpBB Studio - OAuth2",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.2.7,<4.0.0@dev"
+			"phpbb/phpbb": ">=3.2.5,<4.0.0@dev"
 		}
 	},
 	"autoload": {
