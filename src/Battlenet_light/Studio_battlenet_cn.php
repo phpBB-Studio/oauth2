@@ -28,7 +28,6 @@ class Studio_battlenet_cn extends Studio_battlenet_base
 	{
 		parent::__construct($credentials, $http_client, $storage, $scopes, $base_api_uri);
 
-		$this->region = 'cn';
 		$this->baseApiUri = new Uri('https://www.battlenet.com.cn/');
 	}
 
