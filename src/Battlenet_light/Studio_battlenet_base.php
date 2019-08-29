@@ -22,12 +22,11 @@ class Studio_battlenet_base extends AbstractService
 {
 	/**
 	 * Returns the user Blizzard Account ID and BattleTag
-	 * plus the Battle.net Account Identity.
 	 * (For OAuth2, this requires the identify scope)
 	 *
-	 * @see https://develop.battle.net/documentation/guides/using-oauth
+	 * @see https://develop.battle.net/documentation/guides/using-oauth/authorization-code-flow
 	 */
-	const SCOPE_OPENID = 'openid';
+	const SCOPE_ACCOUNT_PUBLIC = 'account.public';
 
 	/**
 	 * BattleNet Region
@@ -50,7 +49,7 @@ class Studio_battlenet_base extends AbstractService
 			 * You can specify multiple scopes by separating them with a space
 			 * (implode the array with a space separator). See below.
 			 */
-			$scopes = [self::SCOPE_OPENID];
+			$scopes = [self::SCOPE_ACCOUNT_PUBLIC];
 		}
 
 		parent::__construct($credentials, $http_client, $storage, $scopes, $base_api_uri);
@@ -147,6 +146,7 @@ class Studio_battlenet_base extends AbstractService
 			[
 				'client_id'			=> $this->credentials->getConsumerId(),
 				'response_type'		=> 'code',
+				'grant_type'		=> 'authorization_code',
 				'redirect_uri'		=> $this->credentials->getCallbackUrl(),
 			]
 		);
