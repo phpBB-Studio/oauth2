@@ -47,5 +47,4 @@ class Studio_battlenet_cn extends Studio_battlenet_base
 	{
 		return new Uri('https://www.battlenet.com.cn/oauth/token');
 	}
-
 }
