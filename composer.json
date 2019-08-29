@@ -21,7 +21,7 @@
 		}
 	},
 	"autoload": {
-		"psr-4": [
+		"files": [
 			"src/Studio_github.php",
 			"src/Studio_discord.php",
 			"src/Battlenet_light/Studio_battlenet_base.php",
