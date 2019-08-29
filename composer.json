@@ -21,14 +21,8 @@
 		}
 	},
 	"autoload": {
-		"files": [
-			"src/Studio_github.php",
-			"src/Studio_discord.php",
-			"src/Battlenet_light/Studio_battlenet_base.php",
-			"src/Battlenet_light/Studio_battlenet_apac.php",
-			"src/Battlenet_light/Studio_battlenet_cn.php",
-			"src/Battlenet_light/Studio_battlenet_eu.php",
-			"src/Battlenet_light/Studio_battlenet_us.php"
-		]
+		"psr-4": {
+			"phpbb-studio\\oauth2\\": "src/"
+		}
 	}
 }
