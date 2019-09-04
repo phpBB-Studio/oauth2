@@ -28,7 +28,8 @@
 			"src/Battlenet_light/Studio_battlenet_apac.php",
 			"src/Battlenet_light/Studio_battlenet_cn.php",
 			"src/Battlenet_light/Studio_battlenet_eu.php",
-			"src/Battlenet_light/Studio_battlenet_us.php"
+			"src/Battlenet_light/Studio_battlenet_us.php",
+			"src/Studio_spotify.php"
 		]
 	}
 }
