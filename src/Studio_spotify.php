@@ -55,6 +55,7 @@ class Studio_spotify extends AbstractService
 			/**
 			 * You can specify multiple scopes by separating them with a space
 			 * (implode the array with a space separator). See below.
+			 * @see https://developer.spotify.com/documentation/general/guides/authorization-guide/#list-of-scopes
 			 */
 			$scopes = [self::SCOPE_USER_READ_EMAIL];
 		}
