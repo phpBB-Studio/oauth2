@@ -26,7 +26,8 @@ class Studio_spotify extends AbstractService
 	 *
 	 * If the user-read-email scope is authorized, the returned JSON will include the email
 	 * address that was entered when the user created their Spotify account.
-	 * This email address is unverified; do not assume that Spotify has checked that email address actually belongs to the user.
+	 * This email address is unverified; do not assume that Spotify
+	 * has checked that email address actually belongs to the user.
 	 *
 	 * @see https://developer.spotify.com/documentation/general/guides/scopes/#user-read-email
 	 */
@@ -63,10 +64,7 @@ class Studio_spotify extends AbstractService
 		if (null === $baseApiUri)
 		{
 			/**
-			 * Omitting the version number from the route will route
-			 * requests to the current default version. (v6 as of 24-08-2019)
-			 *
-			 * @see https://discordapp.com/developers/docs/reference#api-versioning
+			 * API version in use as today 04-09-2019
 			 */
 			$this->baseApiUri = new Uri('https://api.spotify.com/v1/');
 		}
@@ -167,7 +165,8 @@ class Studio_spotify extends AbstractService
 
 		/**
 		 * Whether or not to force the user to approve the app again if they’ve already done so.
-		 * If false (default), a user who has already approved the application may be automatically redirected to the URI specified by redirect_uri.
+		 * If false (default), a user who has already approved the application may be automatically
+		 * redirected to the URI specified by redirect_uri.
 		 * If true, the user will not be automatically redirected and will have to approve the app again.
 		 *
 		 * @see https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow
