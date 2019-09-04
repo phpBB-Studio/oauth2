@@ -65,7 +65,7 @@ class Studio_spotify extends AbstractService
 		if (null === $baseApiUri)
 		{
 			/**
-			 * API version in use as today 04-09-2019
+			 * API version in use as of today 04-09-2019
 			 */
 			$this->baseApiUri = new Uri('https://api.spotify.com/v1/');
 		}
@@ -115,7 +115,7 @@ class Studio_spotify extends AbstractService
 		}
 
 		/**
-		 * Spotify's token expires in 1 week (604800 seconds)
+		 * Spotify's token expires in 1 day (86400 seconds)
 		 * Let the logic discover it itself though.
 		 */
 		$token = new StdOAuth2Token();
@@ -166,9 +166,6 @@ class Studio_spotify extends AbstractService
 
 		/**
 		 * Whether or not to force the user to approve the app again if they’ve already done so.
-		 * If false (default), a user who has already approved the application may be automatically
-		 * redirected to the URI specified by redirect_uri.
-		 * If true, the user will not be automatically redirected and will have to approve the app again.
 		 *
 		 * @see https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow
 		 */
@@ -176,7 +173,7 @@ class Studio_spotify extends AbstractService
 
 		/**
 		 * Prevent CSRF and Clickjacking.
-		 * That's not explicitly requested by Spotify.
+		 * That's not explicitly requested by Spotify but strongly suggested ;-D.
 		 *
 		 * @see https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow
 		 */
