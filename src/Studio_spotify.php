@@ -84,7 +84,7 @@ class Studio_spotify extends AbstractService
 	 */
 	public function getAccessTokenEndpoint()
 	{
-		return new Uri('https://accounts.spotify.com/token');
+		return new Uri('https://accounts.spotify.com/api/token');
 	}
 
 	/**
