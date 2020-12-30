@@ -4,6 +4,8 @@
 	"type": "library",
 	"license": "MIT",
 	"homepage": "https://phpbbstudio.com",
+	"version": "1.4",
+	"time": "2020-12-30",
 	"authors": [
 		{
 			"name": "phpBB-Studio",

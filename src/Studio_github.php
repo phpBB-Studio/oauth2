@@ -84,7 +84,7 @@ class Studio_github extends AbstractService
 	 */
 	protected function getAuthorizationMethod()
 	{
-		return static::AUTHORIZATION_METHOD_QUERY_STRING;
+		return static::AUTHORIZATION_METHOD_HEADER_BEARER;
 	}
 
 	/**
